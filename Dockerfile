@@ -17,7 +17,7 @@ RUN go mod download
 
 COPY . .
 
-RUN go build ./cmd/datamin-integration.go
+RUN go build ./cmd/s3lambda.go
 
 FROM golang:1.21-alpine AS final
 
@@ -33,6 +33,6 @@ EXPOSE 3338
 
 WORKDIR /opt/datamin
 
-ENTRYPOINT [ "/opt/datamin/datamin-integration" ]
+ENTRYPOINT [ "/opt/datamin/s3lambda" ]
 
-CMD [ "run-kafka-trigger"]
+CMD [ "run-s3-listener-lambda"]

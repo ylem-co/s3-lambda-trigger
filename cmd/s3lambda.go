@@ -2,9 +2,9 @@ package main
 
 import (
 	"context"
-	"integration/pkg/cli"
 	"os"
 	"os/signal"
+	"s3lambda/pkg/cli"
 	"syscall"
 	"time"
 

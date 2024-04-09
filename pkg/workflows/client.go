@@ -3,8 +3,8 @@ package workflows
 import (
 	"encoding/json"
 	"fmt"
-	"integration/pkg/oauth"
 	"net/http"
+	"s3lambda/pkg/oauth"
 
 	"github.com/go-resty/resty/v2"
 	log "github.com/sirupsen/logrus"
