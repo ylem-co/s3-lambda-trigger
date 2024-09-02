@@ -127,7 +127,7 @@ type mappingItem struct {
 
 var RunS3ListenerLambdaCommand = &cli.Command{
 	Name:        "run-s3-listener-lambda",
-	Description: "Run Datamin S3 listener lambda",
-	Usage:       "Run Datamin S3 listener lambda",
+	Description: "Run Ylem S3 listener lambda",
+	Usage:       "Run Ylem S3 listener lambda",
 	Action:      runS3ListenerLambdaHandler,
 }

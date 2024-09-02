@@ -8,7 +8,7 @@ RUN mkdir /user && \
     echo 'nobody:x:65534:65534:nobody:/:' > /user/passwd && \
     echo 'nobody:x:65534:' > /user/group
 
-WORKDIR /opt/datamin
+WORKDIR /opt/ylem
 
 COPY go.mod ./
 COPY go.sum ./
@@ -31,8 +31,8 @@ USER nobody:nobody
 
 EXPOSE 3338
 
-WORKDIR /opt/datamin
+WORKDIR /opt/ylem
 
-ENTRYPOINT [ "/opt/datamin/s3lambda" ]
+ENTRYPOINT [ "/opt/ylem/s3lambda" ]
 
 CMD [ "run-s3-listener-lambda"]
