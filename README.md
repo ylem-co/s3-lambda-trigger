@@ -5,7 +5,7 @@ An AWS lambda listening to events from S3 and running Ylem pipelines using the u
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/ylem-co/s3-lambda-trigger?color=black)
 <a href="https://github.com/ylem-co/ylem?tab=Apache-2.0-1-ov-file">![Static Badge](https://img.shields.io/badge/license-Apache%202.0-black)</a>
 <a href="https://ylem.co" target="_blank">![Static Badge](https://img.shields.io/badge/website-ylem.co-black)</a>
-<a href="https://docs.datamin.io" target="_blank">![Static Badge](https://img.shields.io/badge/documentation-docs.datamin.io-black)</a>
+<a href="https://docs.ylem.co" target="_blank">![Static Badge](https://img.shields.io/badge/documentation-docs.ylem.co-black)</a>
 <a href="https://join.slack.com/t/ylem-co/shared_invite/zt-2nawzl6h0-qqJ0j7Vx_AEHfnB45xJg2Q" target="_blank">![Static Badge](https://img.shields.io/badge/community-join%20Slack-black)</a>
 
 ## How it works
@@ -16,7 +16,7 @@ After installation, the lambda listens to S3 events about created objects (i.e. 
 
 ### Pre-requisites
 
-Create an OAuth client for the lambda here: https://app.ylem.co/api-clients and copy the client ID and client secret key.
+Create an OAuth client for the lambda here: https://app.datamin.io/api-clients and copy the client ID and client secret key.
 
 ### Method 1: From Zip archive
 
